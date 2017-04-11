@@ -1,0 +1,122 @@
+{
+	"camera_motion" : {
+		"base_name" : "camera_motion_%05d",
+		"extension" : "csv",
+		"file_type" : "text",
+		"data_size" : 1,
+		"data" : {
+			"rot_m11" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m12" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m13" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m21" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m22" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m23" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m31" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m32" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"rot_m33" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"trans_vx" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"trans_vy" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"trans_vz" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			}
+		}
+	},
+	"colliding_objects" : {
+		"base_name" : "colliding_object_%05d",
+		"extension" : "csv",
+		"file_type" : "text",
+		"data_size" : 0,
+		"data" : {
+			"track_id" : {
+				"data_type" : "uint",
+				"pattern" : "\d+"
+			},
+			"obj_type" : {
+				"data_type" : "uint",
+				"pattern" : "\d+"
+			},
+			"visibility" : {
+				"data_type" : "bool",
+				"pattern" : "\d+"
+			},
+			"position" : {
+				"data_type" : "float",
+				"pattern" : "{ -*\d+\.\d+; -*\d+\.\d+ }"
+			},
+			"velocity" : {
+				"data_type" : "float",
+				"pattern" : "{ -*\d+\.\d+; -*\d+\.\d+ }"
+			},
+			"size" : {
+				"data_type" : "float",
+				"pattern" : "{ -*\d+\.\d+; -*\d+\.\d+; -*\d+\.\d+ }"
+			},
+			"orientation" : {
+				"data_type" : "float",
+				"pattern" : "{ -*\d+\.\d+; -*\d+\.\d+; -*\d+\.\d+ }"
+			},
+			"collision_time" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"collision_prob" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"collision_prob_limit" : {
+				"data_type" : "float",
+				"pattern" : "-*\d+\.\d+"
+			},
+			"out_of_range" : {
+				"data_type" : "bool",
+				"pattern" : "\d+"
+			}
+		}
+	},
+	"optical_flow" : {
+		"base_name" : "optical_flow_map_%05d",
+		"extension" : "csv",
+		"file_type" : "text",
+		"data_size" : 2160,
+		"data" : {
+			"opt_all" : {
+				"data_type" : "float",
+				"pattern" : "(-*\d+\.\d+,*\s*){1080}"
+			}
+		}
+	}
+}
